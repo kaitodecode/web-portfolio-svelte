@@ -95,6 +95,8 @@
             items-center justify-center space-y-2 rounded-3xl bg-slate-300/70 p-4 shadow-lg backdrop-blur-sm
             transition-colors duration-300 hover:bg-slate-300/90 md:relative md:right-auto md:bottom-2 md:left-auto md:flex-row md:space-y-0
             md:space-x-8 md:rounded-full md:px-10"
+			class:hidden={!isMenuOpen}
+			class:md:flex={true}
 		>
 			{#each [{ text: 'Beranda', path: '/' }, { text: 'Tentang Saya', path: '/about' }, { text: 'Proyek & Pencapaian', path: '/project' }, { text: 'Artikel', path: '/blog' }, { text: 'Kontak', path: '/contact' }] as item}
 				<li>
